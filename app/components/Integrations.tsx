@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import {
     Sparkles,
     ArrowRight,
@@ -10,6 +11,7 @@ import {
     Layers,
     Zap
 } from "lucide-react";
+
 
 interface IntegrationItem {
     name: string;
@@ -58,24 +60,6 @@ const Integrations: React.FC = () => {
             { name: "CMMS Software", logo: "💻", color: "from-purple-500 to-teal-500" },
             { name: "Enterprise Asset Management", logo: "🏢", color: "from-teal-500 to-purple-500" },
             { name: "EMS", logo: "⚙️", color: "from-purple-600 to-teal-600" },
-        ],
-        Integrations: [
-            { name: "Salesforce", logo: "☁️", color: "from-purple-500 to-teal-500" },
-            { name: "ServiceNow", logo: "🔧", color: "from-teal-500 to-purple-500" },
-            { name: "Microsoft 365", logo: "💼", color: "from-purple-600 to-teal-600" },
-            { name: "Slack", logo: "💬", color: "from-teal-600 to-purple-600" },
-            { name: "Jira", logo: "🎯", color: "from-purple-500 to-teal-500" },
-            { name: "AWS", logo: "☁️", color: "from-teal-500 to-purple-500" },
-            { name: "Azure", logo: "🌩️", color: "from-purple-600 to-teal-600" },
-            { name: "Google Cloud", logo: "🌥️", color: "from-teal-600 to-purple-600" },
-            { name: "Okta", logo: "🔐", color: "from-purple-500 to-teal-500" },
-            { name: "Tableau", logo: "📊", color: "from-teal-500 to-purple-500" },
-            { name: "SAP", logo: "💾", color: "from-purple-600 to-teal-600" },
-            { name: "Oracle", logo: "🏛️", color: "from-teal-600 to-purple-600" },
-            { name: "Zoom", logo: "📹", color: "from-purple-500 to-teal-500" },
-            { name: "DocuSign", logo: "📝", color: "from-teal-500 to-purple-500" },
-            { name: "Stripe", logo: "💳", color: "from-purple-600 to-teal-600" },
-            { name: "HubSpot", logo: "🎪", color: "from-teal-600 to-purple-600" },
         ],
     };
 
@@ -238,13 +222,13 @@ const Integrations: React.FC = () => {
                     <p className="text-gray-600 mb-4">
                         Don't see what you're looking for?
                     </p>
-                    <button className="inline-flex items-center gap-2 px-6 py-3 
+                    <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 
             bg-gradient-to-r from-[#5D1F73] to-[#1ABC9C] 
             text-white font-semibold rounded-xl text-sm
             hover:shadow-lg transition-all duration-300 group">
                         Contact Us
                         <Sparkles className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                    </button>
+                    </Link>
                 </motion.div>
             </div>
         </section>
