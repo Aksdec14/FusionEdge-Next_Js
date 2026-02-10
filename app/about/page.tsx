@@ -191,7 +191,7 @@ const About = () => {
 
                                 <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-2xl">
                                     <img
-                                        src="/about.png"
+                                        src="/image.png"
                                         alt="FusionEdge Platform"
                                         className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                                     />

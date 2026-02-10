@@ -27,7 +27,7 @@ import {
 
 // ─── Unsplash Image URLs ─────────────────────────────────────────────────────
 const IMAGES = {
-    hero: "https://images.unsplash.com/photo-1581091226825-d6d93578f6ca?w=1200&q=80&auto=format&fit=crop",
+    hero: "https://images.unsplash.com/photo-1746014601017-4e515ef51722?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dashboard: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&auto=format&fit=crop",
     management: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80&auto=format&fit=crop",
     support: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80&auto=format&fit=crop",

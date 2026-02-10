@@ -62,7 +62,7 @@ export default function AssetManagementPage() {
                         {/* Right Image */}
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                             <Image
-                                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&q=80&fit=crop"
+                                src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Modern data center with server racks"
                                 width={800}
                                 height={600}
@@ -163,7 +163,7 @@ export default function AssetManagementPage() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                             <Image
-                                src="https://images.unsplash.com/photo-1586864387634-fa02f9a5a8d2?w=700&h=500&q=80&fit=crop"
+                                src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=1706&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Worker scanning QR code for asset tracking"
                                 width={700}
                                 height={500}
@@ -343,7 +343,7 @@ export default function AssetManagementPage() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                             <Image
-                                src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=700&h=500&q=80&fit=crop"
+                                src="https://images.unsplash.com/photo-1599413720280-1beeb76ff93a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Mobile device showing asset management application"
                                 width={700}
                                 height={500}

@@ -26,7 +26,7 @@ const sections = [
         title: "Preventive Maintenance",
         description:
             "Automate preventive maintenance schedules to reduce downtime and improve equipment reliability.",
-        img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -44,7 +44,7 @@ const sections = [
         title: "Asset Management",
         description:
             "Track and optimize asset performance with real-time insights and lifecycle management tools.",
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1707157281599-d155d1da5b4c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
@@ -80,7 +80,7 @@ const sections = [
         title: "Analytics & Insights",
         description:
             "Get actionable insights from real-time analytics to improve operational efficiency and decision-making.",
-        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=1674&q=80&auto=format&fit=crop",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -150,8 +150,8 @@ export default function OperationsSection() {
                                     key={section.id}
                                     onClick={() => handleTabChange(section.id)}
                                     className={`group relative flex items-center gap-3 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 whitespace-nowrap ${activeTab === section.id
-                                            ? "text-white shadow-lg scale-105"
-                                            : "text-gray-700 bg-white border-2 border-gray-200 hover:border-[#5D1F73] hover:bg-purple-50"
+                                        ? "text-white shadow-lg scale-105"
+                                        : "text-gray-700 bg-white border-2 border-gray-200 hover:border-[#5D1F73] hover:bg-purple-50"
                                         }`}
                                 >
                                     {activeTab === section.id && (
@@ -176,8 +176,8 @@ export default function OperationsSection() {
                         {/* Left Side - Content */}
                         <div
                             className={`space-y-6 transition-all duration-500 ${isTransitioning
-                                    ? "opacity-0 -translate-x-10"
-                                    : "opacity-100 translate-x-0"
+                                ? "opacity-0 -translate-x-10"
+                                : "opacity-100 translate-x-0"
                                 }`}
                         >
                             <div className="space-y-4">
@@ -251,8 +251,8 @@ export default function OperationsSection() {
                         {/* Right Side - Image */}
                         <div
                             className={`relative transition-all duration-500 ${isTransitioning
-                                    ? "opacity-0 translate-x-10"
-                                    : "opacity-100 translate-x-0"
+                                ? "opacity-0 translate-x-10"
+                                : "opacity-100 translate-x-0"
                                 }`}
                         >
                             <div className="relative group">
