@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "FusionEdge is a comprehensive facility and asset management platform designed to streamline operations, enhance efficiency, and provide real-time visibility across your organization.",
 
   icons: {
-    icon: "./fe_logo.png",
+    icon: "/fe_logo.png",
   },
 };
 
