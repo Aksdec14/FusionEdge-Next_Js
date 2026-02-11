@@ -12,6 +12,7 @@ interface FormData {
     jobTitle: string;
     industry: string;
     employeeCount: string;
+    queryType: string;
     message: string;
 }
 
@@ -300,24 +301,32 @@ const RequestDemo = () => {
                                         <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
                                             Industry <span className="text-red-500">*</span>
                                         </label>
-                                        <select
-                                            id="industry"
-                                            name="industry"
-                                            required
-                                            className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200"
-                                        >
-                                            <option value="">Select your industry</option>
-                                            <option value="Construction">Construction</option>
-                                            <option value="Manufacturing">Manufacturing</option>
-                                            <option value="Food & Beverages">Food & Beverages</option>
-                                            <option value="Hospitality">Hospitality</option>
-                                            <option value="Healthcare">Healthcare</option>
-                                            <option value="Education">Education</option>
-                                            <option value="Real Estate">Real Estate</option>
-                                            <option value="Retail">Retail</option>
-                                            <option value="Technology">Technology</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <div className="relative">
+                                            <select
+                                                id="industry"
+                                                name="industry"
+                                                required
+                                                className="w-full h-12 px-4 pr-10 rounded-xl border border-gray-300 text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+                                                defaultValue=""
+                                            >
+                                                <option value="" disabled>Select your industry</option>
+                                                <option value="Construction">Construction</option>
+                                                <option value="Manufacturing">Manufacturing</option>
+                                                <option value="Food & Beverages">Food & Beverages</option>
+                                                <option value="Hospitality">Hospitality</option>
+                                                <option value="Healthcare">Healthcare</option>
+                                                <option value="Education">Education</option>
+                                                <option value="Real Estate">Real Estate</option>
+                                                <option value="Retail">Retail</option>
+                                                <option value="Technology">Technology</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                                <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     {/* Employee Count */}
@@ -325,31 +334,67 @@ const RequestDemo = () => {
                                         <label htmlFor="employeeCount" className="block text-sm font-medium text-gray-700 mb-2">
                                             Company Size <span className="text-red-500">*</span>
                                         </label>
-                                        <select
-                                            id="employeeCount"
-                                            name="employeeCount"
-                                            required
-                                            className="w-full h-12 px-4 rounded-xl border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200"
-                                        >
-                                            <option value="">Select company size</option>
-                                            <option value="1-50">1-50 employees</option>
-                                            <option value="51-200">51-200 employees</option>
-                                            <option value="201-500">201-500 employees</option>
-                                            <option value="501-1000">501-1000 employees</option>
-                                            <option value="1000+">1000+ employees</option>
-                                        </select>
+                                        <div className="relative">
+                                            <select
+                                                id="employeeCount"
+                                                name="employeeCount"
+                                                required
+                                                className="w-full h-12 px-4 pr-10 rounded-xl border border-gray-300 text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+                                                defaultValue=""
+                                            >
+                                                <option value="" disabled>Select company size</option>
+                                                <option value="1-50">1-50 employees</option>
+                                                <option value="51-200">51-200 employees</option>
+                                                <option value="201-500">201-500 employees</option>
+                                                <option value="501-1000">501-1000 employees</option>
+                                                <option value="1000+">1000+ employees</option>
+                                            </select>
+                                            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                                <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    {/* Message */}
+                                    {/* Query Type Dropdown */}
+                                    <div>
+                                        <label htmlFor="queryType" className="block text-sm font-medium text-gray-700 mb-2">
+                                            What are you interested in? <span className="text-red-500">*</span>
+                                        </label>
+                                        <div className="relative">
+                                            <select
+                                                id="queryType"
+                                                name="queryType"
+                                                required
+                                                className="w-full h-12 px-4 pr-10 rounded-xl border border-gray-300 text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+                                                defaultValue=""
+                                            >
+                                                <option value="" disabled>Select your interest</option>
+                                                <option value="Request a Demo">Request a Demo</option>
+                                                <option value="Need Brochure">Need Brochure</option>
+                                                <option value="Collaboration Queries">Collaboration Queries</option>
+                                                <option value="Event Queries">Event Queries</option>
+                                                <option value="Media Queries">Media Queries</option>
+                                            </select>
+                                            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                                <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Additional Details */}
                                     <div>
                                         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                                            Additional Information <span className="text-gray-400">(Optional)</span>
+                                            Additional Details
                                         </label>
                                         <textarea
                                             id="message"
                                             name="message"
                                             rows={4}
-                                            placeholder="Tell us about your facility management challenges or specific features you'd like to see..."
+                                            placeholder="Tell us about your facility management challenges or specific features you'd like to see (optional)..."
                                             className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent resize-none transition-all duration-200"
                                         ></textarea>
                                     </div>
@@ -370,8 +415,8 @@ const RequestDemo = () => {
                                             type="submit"
                                             disabled={isSubmitting}
                                             className={`px-8 py-3 text-white font-semibold rounded-xl bg-gradient-to-r from-[#5D1F73] to-[#1ABC9C] transition-all duration-300 ${isSubmitting
-                                                    ? 'opacity-70 cursor-not-allowed'
-                                                    : 'hover:shadow-lg hover:shadow-purple-500/50 hover:scale-105'
+                                                ? 'opacity-70 cursor-not-allowed'
+                                                : 'hover:shadow-lg hover:shadow-purple-500/50 hover:scale-105'
                                                 }`}
                                         >
                                             {isSubmitting ? (
@@ -398,27 +443,16 @@ const RequestDemo = () => {
                             {/* Result Message */}
                             {result && (
                                 <div className={`mt-6 p-4 rounded-xl text-center font-medium animate-fadeIn ${result.includes('Successfully')
-                                        ? 'bg-green-50 text-green-700 border border-green-200'
-                                        : result.includes('Error') || result.includes('Oops')
-                                            ? 'bg-red-50 text-red-700 border border-red-200'
-                                            : 'bg-blue-50 text-blue-700 border border-blue-200'
+                                    ? 'bg-green-50 text-green-700 border border-green-200'
+                                    : result.includes('Error') || result.includes('Oops')
+                                        ? 'bg-red-50 text-red-700 border border-red-200'
+                                        : 'bg-blue-50 text-blue-700 border border-blue-200'
                                     }`}>
                                     {result}
                                 </div>
                             )}
 
                         </form>
-                    </div>
-
-                    {/* Trust Indicators */}
-                    <div className="mt-12 text-center">
-                        <p className="text-gray-500 text-sm mb-6">Trusted by leading organizations worldwide</p>
-                        <div className="flex flex-wrap justify-center items-center gap-8 opacity-50">
-                            <div className="text-gray-400 font-semibold text-lg">COMPANY 1</div>
-                            <div className="text-gray-400 font-semibold text-lg">COMPANY 2</div>
-                            <div className="text-gray-400 font-semibold text-lg">COMPANY 3</div>
-                            <div className="text-gray-400 font-semibold text-lg">COMPANY 4</div>
-                        </div>
                     </div>
 
                 </div>

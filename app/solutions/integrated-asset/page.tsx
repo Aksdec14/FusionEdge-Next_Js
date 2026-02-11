@@ -31,9 +31,9 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
 // ── Image paths ─────────────────────────────────────────────────────────────
-const assetImage = "/images/35522.jpg";
-const img = "/images/business-people-working-with-ipad-high-angle.png";
-const img1 = "/images/representation-user-experience-interface-design.jpg";
+const assetImage = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop";
+const img = "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=500&fit=crop";
+const img1 = "https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&h=500&fit=crop";
 
 // ── Data ────────────────────────────────────────────────────────────────────
 const benefitsList = [
@@ -311,7 +311,7 @@ export default function IntegratedAsset() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                             <Image
-                                src={assetImage}
+                                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&h=500&fit=crop"
                                 alt="Building Management"
                                 width={700}
                                 height={500}

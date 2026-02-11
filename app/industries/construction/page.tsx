@@ -380,16 +380,6 @@ const Construction = () => {
                             Book a Demo
                         </Link>
                     </div>
-
-                    {/* Trust Indicators */}
-                    <div className="mt-16 pt-8 border-t border-white/20">
-                        <p className="text-white/80 text-sm mb-6">Trusted by leading construction companies</p>
-                        <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                            <div className="text-white font-semibold">COMPANY 1</div>
-                            <div className="text-white font-semibold">COMPANY 2</div>
-                            <div className="text-white font-semibold">COMPANY 3</div>
-                        </div>
-                    </div>
                 </div>
             </section>
 

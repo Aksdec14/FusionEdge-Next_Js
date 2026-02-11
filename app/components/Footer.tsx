@@ -39,7 +39,7 @@ const COLUMNS = [
 
 const SOCIALS = [
   { Icon: FaFacebookF, href: "#", label: "Facebook" },
-  { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
+  { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/fusionedgeservices/", label: "LinkedIn" },
   { Icon: FaXTwitter, href: "#", label: "X Twitter" },
 ];
 

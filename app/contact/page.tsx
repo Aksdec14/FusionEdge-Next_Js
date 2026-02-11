@@ -9,6 +9,7 @@ interface FormData {
     email: string;
     phone: string;
     contactMethod: string;
+    queryType: string;
     message: string;
 }
 
@@ -79,11 +80,11 @@ const Contact = () => {
                             {/* Image Card */}
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                                 <img
-                                    src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&q=80"
+                                    src="https://images.unsplash.com/photo-1740560051533-3acef26ace95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="Contact Us"
                                     className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent"></div>
                                 <div className="absolute top-8 left-8">
                                     <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
                                         Let's Talk
@@ -277,17 +278,45 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                {/* Message Textarea */}
+                                {/* Query Type Dropdown */}
+                                <div>
+                                    <label htmlFor="queryType" className="block text-sm font-medium text-gray-700 mb-2">
+                                        How can we help you? <span className="text-red-500">*</span>
+                                    </label>
+                                    <div className="relative">
+                                        <select
+                                            id="queryType"
+                                            name="queryType"
+                                            required
+                                            className="w-full h-12 px-4 pr-10 rounded-xl border border-gray-300 text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+                                            defaultValue=""
+                                        >
+                                            <option value="" disabled>Select your query type</option>
+                                            <option value="Request a Demo">Request a Demo</option>
+                                            <option value="Need Brochure">Need Brochure</option>
+                                            <option value="Collaboration Queries">Collaboration Queries</option>
+                                            <option value="Event Queries">Event Queries</option>
+                                            <option value="Media Queries">Media Queries</option>
+                                        </select>
+                                        {/* Custom Dropdown Arrow */}
+                                        <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                            <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Additional Details Textarea */}
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Your Message <span className="text-red-500">*</span>
+                                        Additional Details
                                     </label>
                                     <textarea
                                         id="message"
                                         name="message"
-                                        required
-                                        rows={5}
-                                        placeholder="Tell us how we can help you..."
+                                        rows={4}
+                                        placeholder="Tell us more about your requirements (optional)..."
                                         className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#5D1F73] focus:border-transparent resize-none transition-all duration-200"
                                     ></textarea>
                                 </div>

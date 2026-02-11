@@ -31,7 +31,7 @@ import Footer from "@/app/components/Footer";
 
 // ── Image path ──────────────────────────────────────────────────────────────
 // Replace with your actual image path
-const workOrderImage = "/images/mentor-explaining-marketing-data-interns.jpg";
+const workOrderImage = "https://images.unsplash.com/photo-1529661197280-63dc545366c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 // ── Data ────────────────────────────────────────────────────────────────────
 const workOrderSections = [
@@ -241,7 +241,7 @@ export default function WorkOrder() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                             <Image
-                                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&h=500&q=80&fit=crop"
+                                src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Team working on maintenance tasks"
                                 width={700}
                                 height={500}
